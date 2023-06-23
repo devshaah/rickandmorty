@@ -5,7 +5,7 @@ import { BrowserRouter as Router , Routes, Route, BrowserRouter } from 'react-ro
 import { useState } from 'react';
 import Info from './pages/info';
 import Home from './home';
-import Board from './pages/pedro';
+import Board from './pages/todo';
 
 function App() {
 

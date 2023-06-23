@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./pedro.css";
+import "./todo.css";
 
 const initialTasks = [
   { id: 1, title: "Task 1", swimlane: "To Do" },
@@ -89,7 +89,6 @@ const Board = () => {
               type="text"
               onChange={(event) => setnewtask(event.target.value)}
             />
-            <h1>{newtask}</h1>
             <button onClick={addnewtask} >
               Add Task
             </button>

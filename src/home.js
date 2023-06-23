@@ -1,12 +1,13 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+import './style.css'
 
 const Home = () => {
     const navigate = useNavigate()
   return (
-    <div>
-      <button onClick={()=>navigate('/rickandmorty')}>Rick And Morty</button>
-      <button onClick={()=>navigate('/todo')}>Drag & Drop to-do</button>
+    <div className='homepage'>
+      <button onClick={()=>navigate('/rickandmorty')} className='homebtn'>Rick And Morty</button>
+      <button onClick={()=>navigate('/todo')} className='homebtn'>Drag & Drop to-do</button>
     </div>
   )
 }
