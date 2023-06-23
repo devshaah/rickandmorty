@@ -1,8 +1,13 @@
-# Rick and Morty Character Explorer
+# Rick and Morty Character Explorer && Drag-Drop Trello Board
 
-This is a web application that allows you to explore characters from the Rick and Morty series. You can browse through a list of characters, apply filters based on name, status, and gender, and view detailed information about each character.
+ #Rick and Morty Character Explorer  
+This is a web application that allows you to explore characters from the Rick and Morty series . You can browse through a list of characters, apply filters based on name, status, and gender, and view detailed information about each character.
 
 The project is built using React and utilizes the Rick and Morty API to fetch character data. 
+
+#Drag&Drop Trello Board
+This project is a Trello-like board built using React, incorporating three swimlanes: To do, In Progress, and Completed. It allows users to manage tasks by dragging and dropping cards between swimlanes.
+
 
 ## System Requirements
 
