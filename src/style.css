@@ -1,0 +1,148 @@
+body{
+    background-color: rgb(41, 40, 40);
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0.5rem 0.1rem;
+}
+
+/* HOME */
+
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+    padding: 2rem;
+}
+
+input{
+    outline: none;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    padding: 0.8rem;
+    width: 20vw;
+}
+
+button{
+    padding: 0.3rem 0.8rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: large;
+    background-color: black;
+    color: white;
+
+    border-radius:10px ;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    transition: ease-in 0.1s;
+}
+
+select{
+    outline: none;
+    padding: 0.8rem;
+    border-radius: 10px;
+}
+
+
+
+.info{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: left;
+    color: white;
+    width: 30vw;
+    height: 24vh;
+    background-color: rgb(66, 65, 65);
+    border: 1px solid black;
+    margin: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.img{
+    height: 25vh;
+    margin-right: 1rem;
+}
+
+
+/* INFO PAGE  */
+
+.page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infopage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+   overflow: hidden;
+}
+
+.infoimg{
+    height: 50vh;
+}
+
+.details{
+    font-size: 1.5rem;
+    margin: 1rem 3rem 1rem 1rem;
+    text-align: left
+}
+
+
+
+@media screen and (max-width: 480px) {
+    form{
+        flex-direction: column;
+    }
+    input{
+        width: 60vw;
+    }
+
+    .info{
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .card{
+        width: 90vw;
+        height: 19vh;
+    }
+
+    .img{
+        height: 20vh;
+    }
+
+    .infopage{
+        flex-direction: column;
+        margin: 2rem;
+    }
+  }

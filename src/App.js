@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './home';
+import { BrowserRouter as Router , Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
+import Info from './pages/info';
 
 function App() {
+
+  const [char , setchar] = useState({})
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route element={<Home setchar={setchar} /> } path='/'/>
+          <Route element={<Info char={char} /> } path='/info'/>
+          <Route path='/'/>
+        </Routes>
+      </Router>
+
     </div>
   );
 }
